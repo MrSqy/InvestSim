@@ -20,7 +20,7 @@ Sanal yatırım simülatörü ve portföy analiz aracı. Gerçek piyasa verileri
 
 ```bash
 # 1. Repoyu klonlayın
-git clone https://github.com/kullaniciadin/InvestSim.git
+git clone https://github.com/MrSqy/InvestSim.git
 cd InvestSim
 
 # 2. Sanal ortam oluşturun
