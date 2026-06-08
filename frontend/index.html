@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InvestSim - Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1>InvestSim</h1>
+        <div class="nav-links">
+            <a href="index.html" class="active">Dashboard</a>
+            <a href="market.html">Piyasa</a>
+            <a href="portfolio.html">Portföy</a>
+            <a href="analytics.html">Analiz</a>
+        </div>
+    </nav>
+    <main class="container">
+        <section class="summary-cards">
+            <div class="card">
+                <h3>Sanal Bakiye</h3>
+                <p id="balance">Yükleniyor...</p>
+            </div>
+            <div class="card">
+                <h3>Portföy Değeri</h3>
+                <p id="portfolio-value">Yükleniyor...</p>
+            </div>
+            <div class="card">
+                <h3>Toplam Getiri</h3>
+                <p id="total-return">Yükleniyor...</p>
+            </div>
+        </section>
+        <section class="quick-trade">
+            <h2>Hızlı Al/Sat</h2>
+            <form id="trade-form">
+                <select id="trade-asset">
+                    <option value="">Varlık seçin</option>
+                </select>
+                <input type="number" id="trade-qty" placeholder="Miktar" min="0.01" step="0.01">
+                <button type="button" id="btn-buy">Al</button>
+                <button type="button" id="btn-sell">Sat</button>
+            </form>
+            <p id="trade-msg"></p>
+        </section>
+        <section class="holdings">
+            <h2>Portföyüm</h2>
+            <table id="holdings-table">
+                <thead><tr><th>Sembol</th><th>Tip</th><th>Miktar</th><th>Maliyet</th><th>Fiyat</th><th>K/Z</th></tr></thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </main>
+    <script src="js/api.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

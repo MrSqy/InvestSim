@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>InvestSim - Piyasa</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1>InvestSim</h1>
+        <div class="nav-links">
+            <a href="index.html">Dashboard</a>
+            <a href="market.html" class="active">Piyasa</a>
+            <a href="portfolio.html">Portföy</a>
+            <a href="analytics.html">Analiz</a>
+        </div>
+    </nav>
+    <main class="container">
+        <h2>Piyasa</h2>
+        <table id="market-table">
+            <thead><tr><th>Sembol</th><th>İsim</th><th>Tip</th><th>Fiyat</th><th>Kaynak</th></tr></thead>
+            <tbody></tbody>
+        </table>
+    </main>
+    <script src="js/api.js"></script>
+    <script src="js/market.js"></script>
+</body>
+</html>

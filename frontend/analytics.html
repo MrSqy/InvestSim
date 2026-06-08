@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>InvestSim - Analiz</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1>InvestSim</h1>
+        <div class="nav-links">
+            <a href="index.html">Dashboard</a>
+            <a href="market.html">Piyasa</a>
+            <a href="portfolio.html">Portföy</a>
+            <a href="analytics.html" class="active">Analiz</a>
+        </div>
+    </nav>
+    <main class="container">
+        <h2>Performans</h2>
+        <div id="perf-display" class="card">Yükleniyor...</div>
+        <h2>Çeşitlendirme</h2>
+        <table id="diversification-table">
+            <thead><tr><th>Tip</th><th>Değer</th><th>Oran %</th></tr></thead>
+            <tbody></tbody>
+        </table>
+        <h2>Senaryo Analizi</h2>
+        <form id="scenario-form">
+            <select id="scenario-asset">
+                <option value="">Varlık seçin</option>
+            </select>
+            <input type="date" id="scenario-date">
+            <input type="number" id="scenario-amount" placeholder="Tutar (USD)" min="1" step="1">
+            <button type="button" id="btn-scenario">Hesapla</button>
+        </form>
+        <div id="scenario-result"></div>
+    </main>
+    <script src="js/api.js"></script>
+    <script src="js/analytics.js"></script>
+</body>
+</html>

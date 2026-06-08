@@ -1,0 +1,5 @@
+import os
+
+DATABASE_URL = os.getenv("DATABASE_URL", "investsim.db")
+DEFAULT_VIRTUAL_BALANCE = 100000.0
+DEFAULT_CURRENCY = "USD"
